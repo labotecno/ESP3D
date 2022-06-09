@@ -80,7 +80,7 @@
 //#define BUZZER_DEVICE
 
 //Printer has display and can show message using `M117 <Message>`
-//#define PRINTER_HAS_DISPLAY
+#define PRINTER_HAS_DISPLAY
 
 //INPUT_DEVICE: allow input
 //ROTARY_ENCODER        1
@@ -216,7 +216,7 @@
 //CAMERA_MODEL_M5STACK_WIDE     3
 //CAMERA_MODEL_AI_THINKER       4 e.g. used by ESP32-CAM
 //CAMERA_MODEL_WROVER_KIT       5
-//#define CAMERA_DEVICE CAMERA_MODEL_AI_THINKER
+#define CAMERA_DEVICE CAMERA_MODEL_AI_THINKER
 //#define CAMERA_DEVICE_FLIP_VERTICALY  //comment to disable
 //#define CAMERA_DEVICE_FLIP_HORIZONTALY//comment to disable
 #define CUSTOM_CAMERA_NAME "ESP32-CAM"
