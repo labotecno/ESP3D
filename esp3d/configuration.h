@@ -61,7 +61,7 @@
 #define TELNET_FEATURE
 
 //WS_DATA_FEATURE: allow to connect serial from Websocket
-//#define WS_DATA_FEATURE
+#define WS_DATA_FEATURE
 
 //DISPLAY_DEVICE: allow screen output
 //OLED_I2C_SSD1306_128X64   1
@@ -120,7 +120,7 @@
 //ESP_SDIO                    2 //esp32 only
 //ESP_SDFAT                   3 //esp8266  / esp32
 //ESP_SDFAT2                  4 //esp8266  / esp32
-//#define SD_DEVICE    ESP_SDFAT2
+#define SD_DEVICE  ESP_SDIO
 
 #if defined(SD_DEVICE)
 
@@ -157,7 +157,7 @@
 #define FILESYSTEM_FEATURE ESP_LITTLEFS_FILESYSTEM
 
 //Allows to mount /FS and /SD under / for FTP server
-//#define GLOBAL_FILESYSTEM_FEATURE
+#define GLOBAL_FILESYSTEM_FEATURE
 
 //WEBDAV_FEATURE : enable WebDav feature
 //FS_ROOT        mount all FS
@@ -165,14 +165,14 @@
 //FS_SD          mount SD FS
 //FS_USBDISK     mount USB disk FS
 
-//#define WEBDAV_FEATURE  FS_FLASH
+#define WEBDAV_FEATURE  FS_FLASH
 
 //FTP_FEATURE : enable FTP feature
 //FS_ROOT        mount all FS
 //FS_FLASH       mount Flash FS
 //FS_SD          mount SD FS
 //FS_USBDISK     mount USB disk FS
-//#define FTP_FEATURE  FS_ROOT
+#define FTP_FEATURE  FS_ROOT
 
 //DIRECT_PIN_FEATURE: allow to access pin using ESP201 command
 #define DIRECT_PIN_FEATURE
@@ -204,7 +204,7 @@
 #define WEB_UPDATE_FEATURE
 
 //SD_UPDATE_FEATURE: allow to flash/configure fw using SD
-//#define SD_UPDATE_FEATURE
+#define SD_UPDATE_FEATURE
 
 //NOTIFICATION_FEATURE : allow to push notifications
 #define NOTIFICATION_FEATURE
@@ -286,7 +286,7 @@
  * Benchmark report
  *
  * **********************************/
-//#define ESP_BENCHMARK_FEATURE
+#define ESP_BENCHMARK_FEATURE
 
 //Serial need speed up on esp32
 #define SERIAL_INDEPENDANT_TASK
